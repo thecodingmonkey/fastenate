@@ -22,28 +22,42 @@ $( document ).ready (function() {
               var e_image = $("<div>");
               e_image.addClass("image");
 //              e_image.html(val.data.url);
-              e_image.css("background-image", val.data.url);
+              e_image.css("background-image", "url(" + val.data.url+ ")");
               element.append(e_image);
 
-              var e_title = $("<span>");
+              var e_title = $("<h2>");
               e_title.addClass("title");
               e_title.html(val.data.title);
               element.append(e_title);
 
+              var e_subtitle = $("<h3>");
+
               var e_author = $("<span>");
               e_author.addClass("author");
               e_author.html(val.data.author);
-              element.append(e_author);
+              e_subtitle.append(e_author);
+
+              var e_star = $("<span>");
+              e_star.html("*");
+              e_star.addClass("star");
+              e_subtitle.append(e_star);
 
               var e_age = $("<span>");
               e_age.addClass("age");
               e_age.html(val.data.created);
-              element.append(e_age);
+              e_subtitle.append(e_age);
+
+              e_star = $("<span>");
+              e_star.html("*");
+              e_star.addClass("star");
+              e_subtitle.append(e_star);
 
               var e_views = $("<span>");
               e_views.addClass("views");
-              e_views.html(val.data.score);
-              element.append(e_views);
+              e_views.html(val.data.score + " views");
+              e_subtitle.append(e_views);
+
+              element.append(e_subtitle);
 
               var e_desc = $("<div>");
               e_desc.addClass("description");
