@@ -2307,3 +2307,15 @@ body {
         content: " \2219 "; }
       body .item h3 span.views::after {
         content: " views"; }
+  body .footer {
+    height: 50px;
+    background-color: #444;
+    text-align: center; }
+    body .footer .icon {
+      width: 25px;
+      height: 25px;
+      display: inline-block; }
+    body .footer .icon_fb {
+      background-image: url('/assets/facebook_grey.svg'); }
+    body .footer .icon_instagram {
+      background-image: url('/assets/instagram_grey.svg'); }
