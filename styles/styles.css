@@ -2298,6 +2298,9 @@ body {
       color: gray;
       font-size: 18px;
       font-family: 'Oswald', sans-serif; }
+    body ul li a {
+      color: gray;
+      text-decoration: none; }
     @media only screen and (max-width: 715px) {
       body ul {
         width: 100%; } }
@@ -2314,7 +2317,7 @@ body {
         width: 32%;
         height: 100%;
         display: inline-block; } }
-    body ul li:hover {
+    body ul li a:hover {
       color: orange; }
   body .item_list {
     max-width: 700px;
