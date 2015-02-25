@@ -16,7 +16,9 @@ body {
     width: 100%;
     height: 60px;
 
-    background-image: url(/assets/header_bg.svg);
+    @media #{$medium-up} {
+      background-image: url(/assets/header_bg.svg);
+    }
     background-repeat: no-repeat;
     background-position: center;
 
@@ -24,11 +26,19 @@ body {
       background-image: url(/assets/logo.svg);
       background-repeat: no-repeat;
       background-position: center;
+
       width: 140px;
       height: 50px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 5px;
+
+      @media #{$small-only} {
+        margin-left: 0px;
+        margin-top: 5px;
+//        background-position: left left;
+      }
+
     }
 
     .logo-button {
@@ -103,6 +113,11 @@ body {
     padding: 25px;
     margin: 12px;
 
+    @media #{$small-only} {
+      max-width: none;
+      width: 95%;
+    }
+
     display: inline-block;
 
     background-color: white;
@@ -111,7 +126,13 @@ body {
       height: 170px;
       width: 280px;
 
-      background-size: 280px 170px;
+      @media #{$small-only} {
+        width: 100%;
+        height: 200px;
+      }
+
+      background-size: 100% 100%;
+//      background-size: 280px 170px;
       background-repeat: no-repeat;
 
     }
