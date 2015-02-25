@@ -2244,10 +2244,19 @@ body {
   body .logo {
     display: inline-block;
     width: 100%;
-    height: 100px;
-    background-image: url(/assets/logo.svg);
+    height: 60px;
+    background-image: url(/assets/header_bg.svg);
     background-repeat: no-repeat;
     background-position: center; }
+    body .logo .logo-img {
+      background-image: url(/assets/logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 140px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px; }
   body ul {
     color: #fff;
     background-color: #000;
