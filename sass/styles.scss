@@ -75,6 +75,10 @@ body {
       font-size: 18px;
       font-family: $oswald;
     }
+
+    li:hover {
+      color: orange;
+    }
   }
 
   .item_list {
