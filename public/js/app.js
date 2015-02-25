@@ -37,24 +37,14 @@ $( document ).ready (function() {
               e_author.html(val.data.author);
               e_subtitle.append(e_author);
 
-              var e_star = $("<span>");
-              e_star.html("*");
-              e_star.addClass("star");
-              e_subtitle.append(e_star);
-
               var e_age = $("<span>");
-              e_age.addClass("age");
+              e_age.addClass("age bullet-before");
               e_age.html(val.data.created);
               e_subtitle.append(e_age);
 
-              e_star = $("<span>");
-              e_star.html("*");
-              e_star.addClass("star");
-              e_subtitle.append(e_star);
-
               var e_views = $("<span>");
-              e_views.addClass("views");
-              e_views.html(val.data.score + " views");
+              e_views.addClass("views bullet-before");
+              e_views.html(val.data.score);
               e_subtitle.append(e_views);
 
               element.append(e_subtitle);
