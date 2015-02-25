@@ -61,6 +61,8 @@ $( document ).ready (function() {
       }
     );
 
+  $(".menu_boards").click();
+
   $(".menu_random").click(
       function() {
         $.getJSON(

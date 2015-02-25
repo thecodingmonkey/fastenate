@@ -105,7 +105,32 @@ body {
         content: " views";
       }
     }
+  }
 
+  .footer {
+    height: 50px;
+    background-color: #444;
+
+    // margin-left: auto;
+    // margin-right: auto;
+
+    text-align: center;
+
+    .icon {
+      width: 25px;
+      height: 25px;
+//      background-color: pink;
+
+      display: inline-block;
+    }
+
+    .icon_fb {
+      background-image: url('/assets/facebook_grey.svg');
+    }
+
+    .icon_instagram {
+      background-image: url('/assets/instagram_grey.svg');
+    }
   }
   
 }
