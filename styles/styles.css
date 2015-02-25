@@ -2285,15 +2285,35 @@ body {
     background-color: #000;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center; }
+    @media only screen and (min-width:716px) {
+      body ul {
+        padding-top: 10px;
+        padding-bottom: 10px; } }
     body ul li {
+      padding-top: 10px;
+      padding-bottom: 10px;
       display: inline;
-      padding-right: 30px;
       text-transform: uppercase;
+      color: gray;
       font-size: 18px;
       font-family: 'Oswald', sans-serif; }
+    @media only screen and (max-width: 715px) {
+      body ul {
+        width: 100%; } }
+    @media only screen and (min-width:716px) {
+      body ul li:not(.first)::before {
+        content: " \2219 "; } }
+    @media only screen and (max-width: 715px) {
+      body ul li.first {
+        width: 32%;
+        height: 100%;
+        display: inline-block; }
+      body ul li:not(.first) {
+        border-left: 1px solid gray;
+        width: 32%;
+        height: 100%;
+        display: inline-block; } }
     body ul li:hover {
       color: orange; }
   body .item_list {
@@ -2306,7 +2326,10 @@ body {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
+  body .item:hover {
+    border: 5px orange solid; }
   body .item {
+    border: 5px white solid;
     min-height: 500px;
     box-sizing: border-box;
     max-width: 325px;
@@ -2335,6 +2358,10 @@ body {
       font-size: 24px;
       line-height: 24px;
       font-weight: normal; }
+      @media only screen and (max-width: 715px) {
+        body .item h2 {
+          font-size: 32px;
+          line-height: 32px; } }
     body .item h3 {
       margin: 0;
       padding: 0;
@@ -2343,6 +2370,10 @@ body {
       font-size: 14px;
       color: #888;
       margin-top: 5px; }
+      @media only screen and (max-width: 715px) {
+        body .item h3 {
+          font-size: 18px;
+          line-height: 18px; } }
       body .item h3 span.author::before {
         content: "by "; }
       body .item h3 span.bullet-before::before {
