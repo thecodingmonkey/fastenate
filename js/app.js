@@ -32,7 +32,11 @@ $( document ).ready (function() {
 
       var e_age = $("<span>");
       e_age.addClass("age bullet-before");
-      e_age.html(val.data.created);
+//      e_age.html(val.data.created);
+      e_age.html( 
+        moment.unix(parseInt(val.data.created) ).fromNow()
+      );
+
       e_subtitle.append(e_age);
 
       var e_views = $("<span>");
