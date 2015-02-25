@@ -81,16 +81,20 @@ body {
     }
 
     li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       display: inline;
-//      padding-right: 30px;
+
       text-transform: uppercase;
       color: gray;
 
       font-size: 18px;
       font-family: $oswald;
+    }
 
+    li a {
+      color: gray;
+      text-decoration: none;
     }
 
     @media #{$small-only} {
@@ -123,7 +127,7 @@ body {
 
     
 
-    li:hover {
+    li a:hover {
       color: orange;
     }
   }
