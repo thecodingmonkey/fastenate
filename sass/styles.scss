@@ -30,6 +30,33 @@ body {
       margin-right: auto;
       margin-top: 5px;
     }
+
+    .logo-button {
+      background-color: white;
+      float: right;
+      height: 40px;
+      width: 40px;
+
+      border: 2px orange solid;
+      color: orange;
+
+      font-size: 40px;
+      text-align: center;
+      line-height: 35px;
+
+      position: relative;
+      top: -45px;
+      right: 25px;
+
+      display: inline-block;
+    }
+
+    .logo-button:hover {
+      background-color: orange;
+      color: white;
+      
+    }
+
   }
 
   ul {
