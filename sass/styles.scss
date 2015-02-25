@@ -36,7 +36,6 @@ body {
       @media #{$small-only} {
         margin-left: 0px;
         margin-top: 5px;
-//        background-position: left left;
       }
 
     }
@@ -74,17 +73,55 @@ body {
     background-color: #000;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
+  
+    @media #{$medium-up} {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
     li {
+    padding-top: 10px;
+    padding-bottom: 10px;
       display: inline;
-      padding-right: 30px;
+//      padding-right: 30px;
       text-transform: uppercase;
+      color: gray;
+
       font-size: 18px;
       font-family: $oswald;
+
     }
+
+    @media #{$small-only} {
+//      margin: 0;
+//      padding: 0;
+      width: 100%;
+    }
+
+    li:not(.first)::before {
+      @media #{$medium-up} {
+        content: " \2219 ";
+      }
+    }
+
+    @media #{$small-only} {
+      li.first {
+        width: 32%;
+        height: 100%;
+        display: inline-block;
+      }
+
+      li:not(.first) {
+        border-left: 1px solid gray;
+        width: 32%;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+      
+
+    
 
     li:hover {
       color: orange;
@@ -105,7 +142,13 @@ body {
     margin-right: 0;
   }
 
+  .item:hover {
+    border: 5px orange solid;
+  }
+
   .item {
+    border: 5px white solid;
+
     min-height: 500px;
     box-sizing: border-box;
 
@@ -145,6 +188,11 @@ body {
       font-size: 24px;
       line-height: 24px;
       font-weight: normal;
+
+      @media #{$small-only} {
+        font-size: 32px;
+        line-height: 32px;
+      }
     }
 
     h3 {
@@ -155,6 +203,11 @@ body {
       font-size: 14px;
       color: #888;
       margin-top: 5px;
+
+      @media #{$small-only} {
+        font-size: 18px;
+        line-height: 18px;
+      }
 
       span.author::before {
         content: "by ";
