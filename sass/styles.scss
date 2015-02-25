@@ -14,11 +14,22 @@ body {
     display: inline-block;
 
     width: 100%;
-    height: 100px;
+    height: 60px;
 
-    background-image: url(/assets/logo.svg);
+    background-image: url(/assets/header_bg.svg);
     background-repeat: no-repeat;
     background-position: center;
+
+    .logo-img {
+      background-image: url(/assets/logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 140px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+    }
   }
 
   ul {
