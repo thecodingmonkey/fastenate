@@ -2249,9 +2249,9 @@ body {
     background-position: center; }
     @media only screen and (min-width:716px) {
       body .logo {
-        background-image: url(/assets/header_bg.svg); } }
+        background-image: url(./assets/header_bg.svg); } }
     body .logo .logo-img {
-      background-image: url(/assets/logo.svg);
+      background-image: url(./assets/logo.svg);
       background-repeat: no-repeat;
       background-position: center;
       width: 140px;
