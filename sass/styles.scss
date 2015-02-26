@@ -99,6 +99,7 @@ body {
 
     @media #{$small-only} {
       width: 100%;
+      padding-left: 0;
     }
 
     li:not(.first)::before {
@@ -109,14 +110,14 @@ body {
 
     @media #{$small-only} {
       li.first {
-        width: 32%;
+        width: 33%;
         height: 100%;
         display: inline-block;
       }
 
       li:not(.first) {
         border-left: 1px solid gray;
-        width: 32%;
+        width: 33%;
         height: 100%;
         display: inline-block;
       }
