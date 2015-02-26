@@ -8,7 +8,7 @@ $( document ).ready (function() {
 
     $.each(data.data.children, function(idx, val) {
 
-      console.log(val);
+//      console.log(val);
 
       var element = $("<div>");
       element.addClass("item column small-12 medium-6");
@@ -19,7 +19,7 @@ $( document ).ready (function() {
       element.append(e_image);
 
       var e_title = $("<h2>");
-      e_title.addClass("title");
+      e_title.addClass("title clamp-2");
       e_title.html(val.data.title);
       element.append(e_title);
 
@@ -47,8 +47,10 @@ $( document ).ready (function() {
       element.append(e_subtitle);
 
       var e_desc = $("<div>");
-      e_desc.addClass("description");
-      e_desc.html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum et, iste quae quibusdam.");
+      e_desc.addClass("description clamp-3");
+      var count = Math.floor(Math.random() * 100 + 1);
+      e_desc.lorem({type: 'words', amount: count.toString(), ptags: false});
+//      e_desc.html("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum et, iste quae quibusdam.");
       element.append(e_desc);
 
       $(".item_list").append(element);
