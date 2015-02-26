@@ -58,7 +58,7 @@ $( document ).ready (function() {
   $(".menu_boards").click(
       function() {
         $.getJSON(
-          "/api/my_boards.json",
+          "./api/my_boards.json",
           "",
           processData
           );
@@ -70,7 +70,7 @@ $( document ).ready (function() {
   $(".menu_random").click(
       function() {
         $.getJSON(
-          "/api/random.json",
+          "./api/random.json",
           "",
           processData
           );
@@ -80,7 +80,7 @@ $( document ).ready (function() {
   $(".menu_app").click(
       function() {
         $.getJSON(
-          "/api/get_the_app.json",
+          "./api/get_the_app.json",
           "",
           processData
           );
