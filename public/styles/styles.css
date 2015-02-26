@@ -2300,7 +2300,8 @@ body {
       font-family: 'Oswald', sans-serif; }
     body ul li a {
       color: gray;
-      text-decoration: none; }
+      text-decoration: none;
+      letter-spacing: 1px; }
     @media only screen and (max-width: 715px) {
       body ul {
         width: 100%;
@@ -2308,7 +2309,8 @@ body {
     @media only screen and (min-width:716px) {
       body ul li:not(.first)::before {
         content: "  \2022  ";
-        font-size: 12px; } }
+        font-size: 12px;
+        padding: 5px; } }
     @media only screen and (max-width: 715px) {
       body ul li.first {
         width: 33%;

@@ -95,6 +95,7 @@ body {
     li a {
       color: gray;
       text-decoration: none;
+      letter-spacing: 1px;
     }
 
     @media #{$small-only} {
@@ -106,6 +107,7 @@ body {
       @media #{$medium-up} {
         content: "  \2022  ";
         font-size: 12px;
+        padding: 5px;
       }
     }
 
