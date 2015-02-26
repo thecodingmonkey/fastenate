@@ -16,6 +16,15 @@ $( document ).ready (function() {
       var e_image = $("<div>");
       e_image.addClass("image");
       e_image.css("background-image", "url(" + val.data.url+ ")");
+
+        var e_enclosed_image = $("<img>");
+        e_enclosed_image.attr("src", val.data.url);
+        e_enclosed_image.css("width", "100%");
+        e_enclosed_image.css("height", "100%");
+        e_enclosed_image.hide();
+        e_image.append(e_enclosed_image);
+
+
       element.append(e_image);
 
       var e_title = $("<h2>");
