@@ -2333,6 +2333,7 @@ body {
   body .item:hover {
     border: 5px orange solid; }
   body .item {
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
     border: 5px white solid;
     min-height: 500px;
     box-sizing: border-box;
@@ -2358,15 +2359,12 @@ body {
     body .item h2 {
       font-family: 'Oswald', sans-serif;
       padding: 0;
-      padding-top: 10px;
       margin: 0;
       font-size: 24px;
-      line-height: 24px;
       font-weight: normal; }
       @media only screen and (max-width: 715px) {
         body .item h2 {
-          font-size: 32px;
-          line-height: 32px; } }
+          font-size: 32px; } }
     body .item h3 {
       margin: 0;
       padding: 0;

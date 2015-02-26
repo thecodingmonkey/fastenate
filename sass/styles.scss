@@ -147,6 +147,7 @@ body {
   }
 
   .item {
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
     border: 5px white solid;
 
     min-height: 500px;
@@ -183,15 +184,15 @@ body {
     h2 {
       font-family: $oswald;
       padding: 0;
-      padding-top: 10px;
+//      padding-top: 10px;
       margin: 0;
       font-size: 24px;
-      line-height: 24px;
+//      line-height: 24px;
       font-weight: normal;
 
       @media #{$small-only} {
         font-size: 32px;
-        line-height: 32px;
+//        line-height: 32px;
       }
     }
 
