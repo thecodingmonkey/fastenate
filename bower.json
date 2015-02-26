@@ -1,0 +1,21 @@
+{
+  "name": "fastenate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thecodingmonkey/fastenate",
+  "authors": [
+    "Andrew Wong <coding.monkey.andrew@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "moment": "~2.9.0"
+  }
+}
