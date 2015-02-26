@@ -2324,7 +2324,7 @@ body {
     margin-left: auto;
     margin-right: auto; }
   body .item_container {
-    background-image: url('./assets/bg.jpg');
+    background-image: url('../assets/bg.jpg');
     background-repeat: repeat;
     width: 100%;
     margin-left: 0;
